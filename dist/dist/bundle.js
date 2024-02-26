@@ -1,0 +1,33 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.ts":
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+/***/ (() => {
+
+eval("\ndocument.addEventListener('DOMContentLoaded', function () {\n    const characterSelect = document.getElementById('characterSelect');\n    const closeButton = document.getElementById('closeButton');\n    const closeButton2 = document.getElementById('closeButton2');\n    const weaponSelect = document.getElementById('weaponSelect');\n    const weaponDetails = document.getElementById('weaponDetails');\n    const weaponInfo = document.getElementById('weaponInfo');\n    const weaponLabel = document.getElementById('weaponLabel');\n    const weaponsData = {\n        Knight: [\n            { name: \"Inferno Blade\", image: \"./static/photos/inferno_blade.png\", bloodPoints: 80 },\n            { name: \"Lava Shield\", image: \"./static/photos/lava_shield.png\", bloodPoints: 70 },\n            { name: \"Elvinia Crossbow\", image: \"./static/photos/elvinia_crossbow.png\", bloodPoints: 100 },\n        ],\n        Ogre: [\n            { name: \"Saydonia Axe\", image: \"./static/photos/saydonia_axe.png\", bloodPoints: 80 },\n            { name: \"Destroyer Helmet\", image: \"./static/photos/demolisher_helmet.png\", bloodPoints: 85 },\n            { name: \"Abyssia Shield\", image: \"./static/photos/abyssia_shield.png\", bloodPoints: 40 },\n        ],\n        Peon: [\n            { name: \"Sacron Axe\", image: \"./static/photos/sacron_axe.png\", bloodPoints: 80 },\n            { name: \"Shard Club\", image: \"./static/photos/shard_club.png\", bloodPoints: 60 },\n            { name: \"Valonian Shield\", image: \"./static/photos/rusted_shield.png\", bloodPoints: 40 },\n        ],\n        Archer: [\n            { name: \"Dark Bow\", image: \"./static/photos/dark_bow.png\", bloodPoints: 80 },\n            { name: \"Lightning Quiver\", image: \"./static/photos/lightning_quiver.png\", bloodPoints: 50 },\n            { name: \"Havoc Dagger\", image: \"./static/photos/havoc_dagger.png\", bloodPoints: 40 },\n        ],\n        Dragon: [\n            { name: \"Blackmetal Claws\", image: \"./static/photos/mystic_blade.png\", bloodPoints: 80 },\n            { name: \"Blackmetal Armor\", image: \"./static/photos/blackmetal_armor.png\", bloodPoints: 120 },\n        ],\n        Wizard: [\n            { name: \"Fire Staff\", image: \"./static/photos/fire_staff.png\", bloodPoints: 90 },\n            { name: \"Dark Staff\", image: \"./static/photos/dark_staff.png\", bloodPoints: 95 },\n            { name: \"Dark Mystic Sword\", image: \"./static/photos/dark_mystic_sword.png\", bloodPoints: 85 },\n            { name: \"Fire Cloak\", image: \"./static/photos/fire_cloak.png\", bloodPoints: 75 },\n        ],\n    };\n    function updateWeaponDropdown(character) {\n        weaponSelect.innerHTML = '<option value=\"\">Choose Weapon:</option>';\n        const characterWeapons = weaponsData[character];\n        if (characterWeapons && characterWeapons.length > 0) {\n            characterWeapons.forEach(weapon => {\n                const option = document.createElement('option');\n                option.value = option.textContent = weapon.name;\n                weaponSelect.appendChild(option);\n            });\n            weaponSelect.style.display = 'block';\n            weaponLabel.style.display = 'block';\n            weaponDetails.style.display = 'none';\n            document.querySelectorAll('.weapon-image').forEach(img => img.style.display = 'none');\n        }\n        else {\n            weaponSelect.style.display = 'none';\n            weaponLabel.style.display = 'none';\n            weaponDetails.style.display = 'none';\n        }\n    }\n    characterSelect.addEventListener('change', function () {\n        document.querySelectorAll('.character-image').forEach(img => img.style.display = 'none');\n        const selectedCharacter = characterSelect.value;\n        const characterImage = document.getElementById(selectedCharacter);\n        if (characterImage) {\n            characterImage.style.display = 'block';\n            closeButton.style.display = 'block';\n        }\n        updateWeaponDropdown(selectedCharacter);\n    });\n    closeButton.addEventListener('click', function () {\n        document.querySelectorAll('.character-image').forEach(img => img.style.display = 'none');\n        closeButton.style.display = 'none';\n    });\n    weaponSelect.addEventListener('change', function () {\n        const selectedWeaponName = weaponSelect.value;\n        const selectedWeapon = weaponsData[characterSelect.value].find(weapon => weapon.name === selectedWeaponName);\n        document.querySelectorAll('.weapon-image').forEach(img => img.style.display = 'none');\n        if (selectedWeapon) {\n            const weaponImgElement = document.getElementById(selectedWeapon.name.replace(/\\s+/g, ''));\n            if (weaponImgElement) {\n                weaponImgElement.style.display = 'block';\n            }\n            weaponInfo.textContent = `${selectedWeapon.name} - Blood Points: ${selectedWeapon.bloodPoints}`;\n            weaponDetails.style.display = 'block';\n            closeButton2.style.display = 'block';\n        }\n    });\n    closeButton2.addEventListener('click', function () {\n        document.querySelectorAll('.weapon-image').forEach(img => img.style.display = 'none');\n        weaponDetails.style.display = 'none';\n        closeButton2.style.display = 'none';\n    });\n});\n\n\n//# sourceURL=webpack://day_4/./src/index.ts?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.ts"]();
+/******/ 	
+/******/ })()
+;

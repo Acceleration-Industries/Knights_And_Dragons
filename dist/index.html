@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./static/main.css">
+    <link href="https://fonts.cdnfonts.com/css/magic-school-one" rel="stylesheet">
+    <script src="./dist/bundle.js"></script>
+    <title>KNIGHTS & DRAGONS</title>
+</head>
+
+<body>
+
+    <nav class="topp">
+        <div class="beauty">KNIGHTS & DRAGONS</div>
+    </nav>
+    <form id="characterForm">
+        <div class="eternal_flame">
+            <div class="character_selection">
+                <label for="characterSelect">CHOOSE WARRIOR:<br></label>
+                <select id="characterSelect" class="mb-3" required>
+                    <option value="">SELECT A WARRIOR</option>
+                    <option value="Knight">BLACK KNIGHT</option>
+                    <option value="Dragon">DRAGON</option>
+                    <option value="Ogre">DEMOLISHER</option>
+                    <option value="Archer">DARK ELF</option>
+                    <option value="Peon">VALON</option>
+                    <option value="Wizard">DARK ZYRUS</option>
+                </select>
+            </div>
+
+            <div class="character_images">
+                <button id="closeButton" style="display: none;">X</button>
+                <img src="./static/photos/Knight.jpg" id="Knight" class="character-image" style="display: none;">
+                <img src="./static/photos/Dragon.png" id="Dragon" class="character-image" style="display: none;">
+                <img src="./static/photos/Ogre.png" id="Ogre" class="character-image" style="display: none;">
+                <img src="./static/photos/Peon.png" id="Peon" class="character-image" style="display: none;">
+                <img src="./static/photos/Wizard.png" id="Wizard" class="character-image" style="display: none;">
+                <img src="./static/photos/Archer.png" id="Archer" class="character-image" style="display: none;">
+            </div>
+        </div>
+    </form>
+
+    <form id="weaponsForm">
+        <div class="eternal_flame2">
+            <div class="weaponSelection">
+                <label for="weaponSelect" id="weaponLabel" style="display: none;">CHOOSE WEAPON:</label>
+                <select id="weaponSelect" class="mb-3" style="display: none;">
+                    <option value="">WEAPON:</option>
+                </select>
+            </div>
+
+            <div id="weaponDetails" style="display: none;">
+                <button id="closeButton2" style="display: none;">X</button>
+                <img src="./static/photos/elvinian_bow.png" id="ElviniaCrossbow" class="weapon-image" style="display: none;">
+                <img src="./static/photos/inferno_blade.png" id="InfernoBlade" class="weapon-image" style="display: none;">
+                <img src="./static/photos/lava_shield3.png" id="LavaShield" class="weapon-image" style="display: none;">
+                <img src="./static/photos/saydonia_axe.png" id="SaydoniaAxe" class="weapon-image" style="display: none;">
+                <img src="./static/photos/demolisher_helmet.png" id="DestroyerHelmet" class="weapon-image" style="display: none;">
+                <img src="./static/photos/abyssia_shield.png" id="AbyssiaShield" class="weapon-image" style="display: none;">
+                <img src="./static/photos/valonian_shield.png" id="ValonianShield" class="weapon-image" style="display: none;">
+                <img src="./static/photos/shardclub.png" id="ShardClub" class="weapon-image" style="display: none;">
+                <img src="./static/photos/sacron_axe.png" id="SacronAxe" class="weapon-image" style="display: none;">
+                <img src="./static/photos/dark_bow.png" id="DarkBow" class="weapon-image" style="display: none;">
+                <img src="./static/photos/lightning_quiver.png" id="LightningQuiver" class="weapon-image" style="display: none;">
+                <img src="./static/photos/havoc_dagger.png" id="HavocDagger" class="weapon-image" style="display: none;">
+                <img src="./static/photos/blackmetal_claws.png" id="BlackmetalClaws" class="weapon-image" style="display: none;">
+                <img src="./static/photos/blackmetal_armor.png" id="BlackmetalArmor" class="weapon-image" style="display: none;">
+                <img src="./static/photos/dark_staff.png" id="DarkStaff" class="weapon-image" style="display: none;">
+                <img src="./static/photos/fire_staff.png" id="FireStaff" class="weapon-image" style="display: none;">
+                <img src="./static/photos/dark_mystic_sword.png" id="DarkMysticSword" class="weapon-image" style="display: none;">
+                <img src="./static/photos/fire_cloak.png" id="FireCloak" class="weapon-image" style="display: none;">
+                <p id="weaponInfo"></p>
+            </div>
+        </div>
+    </form>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
