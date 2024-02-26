@@ -100,7 +100,7 @@ h1, h2, h3, label {
     right: 0;
     font-family: 'Magic School One', sans-serif;
     font-size: 2.5rem;
-    color: yellow;
+    color: rgb(255, 136, 0);
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: .5px;
 }
